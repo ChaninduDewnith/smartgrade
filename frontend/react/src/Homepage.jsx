@@ -56,7 +56,7 @@ const HomePage = () => {
         <h3>📞 Contact Us</h3>
         <p>📍 123 galle Rd, Gale</p>
         <p>📞 +94912258620</p>
-        <p>📧 info@sumangala.edu</p>
+        <p>📧 info@sumangalacollege.edu</p>
       </section>
 
       {/* Footer */}
