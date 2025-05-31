@@ -17,7 +17,7 @@ const StudentDashboard = () => {
       description: "Upload your assignments here"
     },
     {
-      label: "Grades",
+      label: "Grades for exams",
       color: "success",
       icon: "bi-bar-chart-line",
       description: "View your performance and grades"
