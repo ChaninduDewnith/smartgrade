@@ -2,25 +2,25 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Dropdown } from "react-bootstrap";
 
-const StudentDashboard = () => {
+const AdminDashboard = () => {
   const buttons = [
     {
-      label: "View Courses",
+      label: "Manage Teachers",
       color: "primary",
-      icon: "bi-journal-text",
-      description: "Access enrolled course materials"
+      icon: "bi-person-badge-fill",
+      description: "Add, update, or remove teacher profiles"
     },
     {
-      label: "Submit Assignments",
-      color: "info",
-      icon: "bi-upload",
-      description: "Upload your assignments here"
+      label: "Manage Courses",
+      color: "warning",
+      icon: "bi-book-half",
+      description: "Create or edit course details"
     },
     {
-      label: "Grades for exams",
+      label: "View Reports",
       color: "success",
-      icon: "bi-bar-chart-line",
-      description: "View your performance and grades"
+      icon: "bi-bar-chart-line-fill",
+      description: "Monitor academic and system performance"
     }
   ];
 
@@ -42,23 +42,23 @@ const StudentDashboard = () => {
               <img alt="Logo" width="60" height="60" className="me-3" />
             </div>
             <h1 className="text-center flex-grow-1 fw-bold text-uppercase d-none d-md-block">
-              Student Dashboard
+              Admin Dashboard
             </h1>
             <h1 className="text-center fw-bold text-uppercase d-block d-md-none">
-              Student
+              Admin
             </h1>
             <div className="d-flex align-items-center">
               <div className="text-end me-3 d-none d-md-block">
-                <h6 className="mb-0">student@email.com</h6>
+                <h6 className="mb-0">admin@email.com</h6>
                 <small className="text-muted">Online</small>
               </div>
               <Dropdown align="end">
                 <Dropdown.Toggle variant="link" className="d-flex align-items-center">
                   <img
-                    alt="User"
+                    alt="Admin"
                     width="50"
                     height="50"
-                    className="rounded-circle border border-3 border-info"
+                    className="rounded-circle border border-3 border-warning"
                   />
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
@@ -82,7 +82,7 @@ const StudentDashboard = () => {
                     <p className="text-muted mb-3 small">{btn.description}</p>
                     <button className={`btn btn-${btn.color} w-100 py-2 fw-semibold rounded-pill`}>
                       <i className={`${btn.icon} me-2`}></i>
-                      Go
+                      Manage
                     </button>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ const StudentDashboard = () => {
 
           <div className="mt-4 pt-3 border-top text-center">
             <p className="text-muted mb-0 small">
-              Student Portal • v1.0.0 • © 2025
+              Admin Panel • v1.0.0 • © 2025
             </p>
           </div>
         </div>
@@ -101,4 +101,4 @@ const StudentDashboard = () => {
   );
 };
 
-export default StudentDashboard;
+export default AdminDashboard;
