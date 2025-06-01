@@ -1,0 +1,113 @@
+/* Ensure full height of page */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Wrapper to enforce full screen */
+.page-wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #3b82f6, #60a5fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login box design */
+.login-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.login-subtitle {
+  color: #6b7280;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: #374151;
+}
+
+.login-form input {
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #3b82f6;
+}
+
+.login-options {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.forgot-link {
+  font-size: 0.85rem;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #1e40af;
+}
+
+.register-text {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.register-text a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
