@@ -4,6 +4,7 @@ import HomePage from "./Homepage";
 import LoginPage from "./login";
 import StudentDashboard from "./studentdashboard";
 import AdminDashboard from "./admindashboard";
+import ManageTeachers from "./manageteachers";
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/admindashboard" element={<AdminDashboard />} />
+        <Route path="/manageteachers" element={<ManageTeachers />} />
         
         
       </Routes>
