@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./Homepage";
 import LoginPage from "./login";
 import StudentDashboard from "./studentdashboard";
+import AdminDashboard from "./admindashboard";
 
 
 
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<StudentDashboard />} />
-
+        <Route path="/admindashboard" element={<AdminDashboard />} />
         
         
       </Routes>

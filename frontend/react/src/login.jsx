@@ -8,9 +8,8 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Here you would typically validate user credentials
-    // For now, just navigate to the dashboard
-    navigate("/dashboard");
+   
+    navigate("/admindashboard");
   };
 
   return (
