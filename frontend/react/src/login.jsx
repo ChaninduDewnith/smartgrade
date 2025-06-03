@@ -1,7 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Here you would typically validate user credentials
+    // For now, just navigate to the dashboard
+    navigate("/dashboard");
+  };
+
   return (
     <div className="page-wrapper">
       <div className="login-container">
@@ -9,7 +20,7 @@ const LoginPage = () => {
           <h2 className="login-title">Welcome Back 👋</h2>
           <p className="login-subtitle">Login to your account</p>
 
-          <form className="login-form">
+          <form className="login-form" onSubmit={handleSubmit}>
             <label>Email</label>
             <input type="email" placeholder="you@example.com" required />
 
