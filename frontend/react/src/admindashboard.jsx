@@ -19,7 +19,7 @@ const AdminDashboard = () => {
       color: "warning",
       icon: "bi-book-half",
       description: "Create or edit course details",
-      onClick: () => navigate("/manage-courses"),
+      onClick: () => navigate("/registerteachers"),
     },
     {
       label: "View Reports",

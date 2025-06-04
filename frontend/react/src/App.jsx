@@ -5,6 +5,7 @@ import LoginPage from "./login";
 import StudentDashboard from "./studentdashboard";
 import AdminDashboard from "./admindashboard";
 import ManageTeachers from "./manageteachers";
+import TeacherRegister from "./addteachers";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/dashboard" element={<StudentDashboard />} />
         <Route path="/admindashboard" element={<AdminDashboard />} />
         <Route path="/manageteachers" element={<ManageTeachers />} />
+        <Route path="/registerteachers" element={<TeacherRegister />} />
         
         
         
