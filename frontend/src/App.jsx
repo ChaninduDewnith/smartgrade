@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./Homepage";
-import LoginPage from "./login";
-import StudentDashboard from "./studentdashboard";
-import AdminDashboard from "./admindashboard";
-import ManageTeachers from "./manageteachers";
-import TeacherRegister from "./addteachers";
+import HomePage from "./pages/Homepage";
+import LoginPage from "./pages/login";
+import StudentDashboard from "./pages/studentdashboard";
+import AdminDashboard from "./pages/admindashboard";
+import ManageTeachers from "./pages/manageteachers";
+import TeacherRegister from "./pages/addteachers";
 
 
 
