@@ -16,7 +16,7 @@ const TeacherRegister = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Registered Teacher:", teacher);
-    // You can add your Firebase/Backend logic here
+    
   };
 
   return (
