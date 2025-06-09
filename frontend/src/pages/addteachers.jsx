@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
 import axios from "axios";
-//const axios = require("axios");
-
 
 const TeacherRegister = () => {
   const [teacher, setTeacher] = useState({
@@ -25,7 +23,8 @@ const TeacherRegister = () => {
       alert("Teacher registered successfully!");
       setTeacher({ name: "", email: "", subject: "", nic: "", password: "" });
     } catch (error) {
-      alert("Error: " + error.response?.data?.message || error.message);
+      const errorMsg = error.response?.data?.message || error.message || "Unknown error";
+      alert("Error: " + errorMsg);
     }
   };
 
