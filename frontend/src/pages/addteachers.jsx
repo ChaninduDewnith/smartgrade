@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form } from "react-bootstrap";
 import axios from "axios";
+//const axios = require("axios");
+
 
 const TeacherRegister = () => {
   const [teacher, setTeacher] = useState({
