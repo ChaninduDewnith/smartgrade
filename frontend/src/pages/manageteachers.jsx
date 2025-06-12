@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Table } from "react-bootstrap";
+import axios from "axios";
 
 const ManageTeachers = () => {
-  const teachers = [
-    { id: 1, name: "John Doe", email: "john.doe@example.com", subject: "Mathematics" },
-    { id: 2, name: "Jane Smith", email: "jane.smith@example.com", subject: "Physics" },
-    { id: 3, name: "Emily Johnson", email: "emily.j@example.com", subject: "Chemistry" },
-  ];
+  const [teachers, setTeachers] = useState([]);
+
+  useEffect(() => {
+    const fetchTeachers = async () => {
+      try {
+        const response = await axios.get("http://localhost:5000/api/teachers");
+        setTeachers(response.data);
+      } catch (error) {
+        console.error("Error fetching teachers:", error);
+      }
+    };
+
+    fetchTeachers();
+  }, []);
 
   return (
     <div
@@ -46,7 +56,7 @@ const ManageTeachers = () => {
             </thead>
             <tbody>
               {teachers.map((teacher, index) => (
-                <tr key={teacher.id}>
+                <tr key={teacher._id}>
                   <td>{index + 1}</td>
                   <td>{teacher.name}</td>
                   <td>{teacher.email}</td>
