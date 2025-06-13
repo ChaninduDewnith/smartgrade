@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { registerTeacher } = require("../controllers/teachercontroller");
 const Teacher = require("../models/teacher");
+const bcrypt = require("bcryptjs");  
 
 // GET all teachers
 router.get("/", async (req, res) => {
@@ -13,9 +14,10 @@ router.get("/", async (req, res) => {
   }
 });
 
-// POST to add a new teacher
+// POST register teacher
 router.post("/", registerTeacher);
 
+// POST login
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -35,6 +37,5 @@ router.post("/login", async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 });
-
 
 module.exports = router;
