@@ -8,21 +8,21 @@ const AdminDashboard = () => {
 
   const buttons = [
     {
-      label: "Manage Teachers",
+      label: "Manage Students",
       color: "primary",
       icon: "bi-person-badge-fill",
       description: "Add, update, or remove teacher profiles",
       onClick: () => navigate("/manageteachers"),
     },
     {
-      label: "Manage Courses",
+      label: "Register Students",
       color: "warning",
       icon: "bi-book-half",
       description: "Create or edit course details",
       onClick: () => navigate("/registerteachers"),
     },
     {
-      label: "View Reports",
+      label: "Add Homeorks",
       color: "success",
       icon: "bi-bar-chart-line-fill",
       description: "Monitor academic and system performance",
