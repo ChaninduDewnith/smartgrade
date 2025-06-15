@@ -6,6 +6,7 @@ import StudentDashboard from "./pages/studentdashboard";
 import AdminDashboard from "./pages/admindashboard";
 import ManageTeachers from "./pages/manageteachers";
 import TeacherRegister from "./pages/addteachers";
+import StudentRegister from "./pages/studentregister";
 
 
 
@@ -19,7 +20,9 @@ function App() {
         <Route path="/admindashboard" element={<AdminDashboard />} />
         <Route path="/manageteachers" element={<ManageTeachers />} />
         <Route path="/registerteachers" element={<TeacherRegister />} />
-        
+        <Route path="/studentdashboard" element={<StudentDashboard/>}/>
+        <Route path="/studentregister" element={<StudentRegister/>}/>
+
         
         
         
