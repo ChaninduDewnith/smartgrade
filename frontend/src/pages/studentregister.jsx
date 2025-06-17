@@ -31,31 +31,31 @@ const StudentRegister = () => {
   return (
     <div className="min-vh-100" style={{ width: "100vw", backgroundColor: "#f8f9fa", padding: "2rem" }}>
       <div className="p-4 rounded-4 shadow-lg mx-auto" style={{ backgroundColor: "#ffffff", maxWidth: "600px" }}>
-        <h3 className="fw-bold text-primary mb-4 text-center">Register Teacher</h3>
+        <h3 className="fw-bold text-primary mb-4 text-center">Register Student</h3>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label>Full Name</Form.Label>
-            <Form.Control type="text" name="name" value={teacher.name} onChange={handleChange} required />
+            <Form.Control type="text" name="name" value={student.name} onChange={handleChange} required />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Email</Form.Label>
-            <Form.Control type="email" name="email" value={teacher.email} onChange={handleChange} required />
+            <Form.Control type="email" name="email" value={student.email} onChange={handleChange} required />
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <Form.Label>Subject</Form.Label>
-            <Form.Control type="text" name="subject" value={teacher.subject} onChange={handleChange} required />
+            <Form.Label>Address</Form.Label>
+            <Form.Control type="text" name="address" value={student.address} onChange={handleChange} required />
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <Form.Label>NIC</Form.Label>
-            <Form.Control type="text" name="nic" value={teacher.nic} onChange={handleChange} required />
+            <Form.Label>Registration Number</Form.Label>
+            <Form.Control type="text" name="regnumber" value={student.regnumber} onChange={handleChange} required />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Password</Form.Label>
-            <Form.Control type="password" name="password" value={teacher.password} onChange={handleChange} required />
+            <Form.Control type="password" name="password" value={student.password} onChange={handleChange} required />
           </Form.Group>
 
           <div className="text-center">
