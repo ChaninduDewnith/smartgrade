@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Dropdown } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const AdminDashboard = () => {
+const TeacherDashboard = () => {
   const navigate = useNavigate();
 
   const buttons = [
@@ -19,7 +19,7 @@ const AdminDashboard = () => {
       color: "warning",
       icon: "bi-book-half",
       description: "Create or edit course details",
-      onClick: () => navigate("/registerteachers"),
+      onClick: () => navigate("/studentregister"),
     },
     {
       label: "Add Homeorks",
@@ -131,4 +131,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default TeacherDashboard;
