@@ -21,7 +21,7 @@ const StudentRegister = () => {
     try {
       const response = await axios.post("http://localhost:5000/api/students", student);
       alert("Student registered successfully!");
-      setStudent({ name: "", email: "", address: "", schoolid: "", password: "" });
+      setStudent({ name: "", email: "", address: "", regnumber: "", password: "" });
     } catch (error) {
       const errorMsg = error.response?.data?.message || error.message || "Unknown error";
       alert("Error: " + errorMsg);

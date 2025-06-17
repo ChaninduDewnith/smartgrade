@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { registerStudent } = require("../controllers/studentcontroller");
 const Student = require("../models/student");
-const bcrypt = require("bcryptjs");  
+const bcrypt = require("bcryptjs");
 
 
 router.get("/", async (req, res) => {
@@ -14,5 +14,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-
 router.post("/", registerStudent);
+
+
+module.exports = router;
