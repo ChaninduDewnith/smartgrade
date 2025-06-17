@@ -4,24 +4,24 @@ import { Button, Form } from "react-bootstrap";
 import axios from "axios";
 
 const StudentRegister = () => {
-  const [teacher, setTeacher] = useState({
+  const [student, setStudent] = useState({
     name: "",
     email: "",
     address: "",
-    schoolid: "",
+    regnumber: "",
     password: "",
   });
 
   const handleChange = (e) => {
-    setTeacher({ ...teacher, [e.target.name]: e.target.value });
+    setStudent({ ...student, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/students", teacher);
-      alert("Teacher registered successfully!");
-      setTeacher({ name: "", email: "", address: "", schoolid: "", password: "" });
+      const response = await axios.post("http://localhost:5000/api/students", student);
+      alert("Student registered successfully!");
+      setStudent({ name: "", email: "", address: "", regnumber: "", password: "" });
     } catch (error) {
       const errorMsg = error.response?.data?.message || error.message || "Unknown error";
       alert("Error: " + errorMsg);
