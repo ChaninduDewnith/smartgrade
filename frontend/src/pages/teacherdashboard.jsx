@@ -12,7 +12,7 @@ const TeacherDashboard = () => {
       color: "primary",
       icon: "bi-person-badge-fill",
       description: "Add, update, or remove teacher profiles",
-      onClick: () => navigate("/manageteachers"),
+      onClick: () => navigate("/managestudents"),
     },
     {
       label: "Register Students",
