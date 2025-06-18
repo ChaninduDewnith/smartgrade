@@ -39,7 +39,7 @@ const ManageStudents = () => {
           <h3 className="fw-bold text-primary m-0">Manage Students</h3>
           <Button variant="primary">
             <i className="bi bi-plus-circle me-2"></i>
-            Add Teacher
+            Add Student
           </Button>
         </div>
 
@@ -50,17 +50,19 @@ const ManageStudents = () => {
                 <th>#</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>Subject</th>
-                <th>Actions</th>
+                <th>Address</th>
+                <th>Reg Number</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              {students.map((teacher, index) => (
-                <tr key={teacher._id}>
+              {students.map((student, index) => (
+                <tr key={student._id}>
                   <td>{index + 1}</td>
-                  <td>{teacher.name}</td>
-                  <td>{teacher.email}</td>
-                  <td>{teacher.subject}</td>
+                  <td>{student.name}</td>
+                  <td>{student.email}</td>
+                  <td>{student.address}</td>
+                  <td>{student.regnumber}</td>
                   <td>
                     <Button variant="outline-success" size="sm" className="me-2">
                       <i className="bi bi-pencil-square"></i>
