@@ -4,20 +4,20 @@ import { Button, Table } from "react-bootstrap";
 import axios from "axios";
 
 const ManageStudents = () => {
-  const [teachers, setTeachers] = useState([]);
+  const [students, setStudents] = useState([]);
 
-  /*useEffect(() => {
-    const fetchTeachers = async () => {
+  useEffect(() => {
+    const fetchStudents = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/teachers");
-        setTeachers(response.data);
+        const response = await axios.get("http://localhost:5000/api/students");
+        setStudents(response.data);
       } catch (error) {
-        console.error("Error fetching teachers:", error);
+        console.error("Error fetching students:", error);
       }
     };
 
-    fetchTeachers();
-  }, []);*/
+    fetchStudents();
+  }, []);
 
   return (
     <div
@@ -55,7 +55,7 @@ const ManageStudents = () => {
               </tr>
             </thead>
             <tbody>
-              {teachers.map((teacher, index) => (
+              {students.map((teacher, index) => (
                 <tr key={teacher._id}>
                   <td>{index + 1}</td>
                   <td>{teacher.name}</td>
