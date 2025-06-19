@@ -15,18 +15,18 @@ const AdminDashboard = () => {
       onClick: () => navigate("/manageteachers"),
     },
     {
-      label: "Manage Courses",
+      label: "Register Teachers",
       color: "warning",
       icon: "bi-book-half",
       description: "Create or edit course details",
       onClick: () => navigate("/registerteachers"),
     },
     {
-      label: "View Reports",
+      label: "Add Classes",
       color: "success",
       icon: "bi-bar-chart-line-fill",
-      description: "Monitor academic and system performance",
-      onClick: () => navigate("/view-reports"),
+      description: "Create class",
+      onClick: () => navigate("/addclass"),
     },
   ];
 

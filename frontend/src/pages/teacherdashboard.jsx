@@ -12,7 +12,7 @@ const TeacherDashboard = () => {
       color: "primary",
       icon: "bi-person-badge-fill",
       description: "Add, update, or remove teacher profiles",
-      onClick: () => navigate("/manageteachers"),
+      onClick: () => navigate("/managestudents"),
     },
     {
       label: "Register Students",
@@ -22,10 +22,10 @@ const TeacherDashboard = () => {
       onClick: () => navigate("/studentregister"),
     },
     {
-      label: "Add Homeorks",
+      label: "",
       color: "success",
       icon: "bi-bar-chart-line-fill",
-      description: "Monitor academic and system performance",
+      description: "",
       onClick: () => navigate("/view-reports"),
     },
   ];
