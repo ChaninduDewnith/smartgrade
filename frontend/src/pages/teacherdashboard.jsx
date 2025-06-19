@@ -22,7 +22,7 @@ const TeacherDashboard = () => {
       onClick: () => navigate("/studentregister"),
     },
     {
-      label: "",
+      label: "View classes",
       color: "success",
       icon: "bi-bar-chart-line-fill",
       description: "",
