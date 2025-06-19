@@ -8,7 +8,6 @@ import ManageTeachers from "./pages/manageteachers";
 import TeacherRegister from "./pages/addteachers";
 import StudentRegister from "./pages/studentregister";
 import TeacherDashboard from "./pages/teacherdashboard";
-import AddClass from "./pages/addclass";
 import ClassRegister from "./pages/addclass";
 
 
