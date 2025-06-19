@@ -8,7 +8,9 @@ import ManageTeachers from "./pages/manageteachers";
 import TeacherRegister from "./pages/addteachers";
 import StudentRegister from "./pages/studentregister";
 import TeacherDashboard from "./pages/teacherdashboard";
+import ClassRegister from "./pages/addclass";
 import ManageStudents from "./pages/managestudents";
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
         <Route path="/studentdashboard" element={<StudentDashboard/>}/>
         <Route path="/studentregister" element={<StudentRegister/>}/>
         <Route path="/teacherdashboard" element={<TeacherDashboard/>}/>
+        <Route path="/addclass" element={<ClassRegister/>}/>
         <Route path="/managestudents" element={<ManageStudents/>}/>
         
         
