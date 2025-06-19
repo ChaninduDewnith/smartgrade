@@ -18,7 +18,6 @@ const ClassRegister = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Replace with your API endpoint
       await axios.post("http://localhost:5000/api/classes", classData);
       alert("Class registered successfully!");
       setClassData({
@@ -34,46 +33,54 @@ const ClassRegister = () => {
   };
 
   return (
-    <div 
-      className="d-flex justify-content-center align-items-center min-vh-100" 
-      style={{ backgroundColor: "#e9f5ff" }}  // Light blue background
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+        width: "100vw",
+        backgroundColor: "#e9f5ff",
+        margin: 0,
+        padding: 0
+      }}
     >
-      <div 
-        className="p-4 rounded-4 shadow-lg w-100" 
+      <div
+        className="p-4 rounded-4 shadow-lg w-100"
         style={{ maxWidth: "500px", backgroundColor: "#ffffff" }}
       >
         <h3 className="fw-bold text-primary mb-4 text-center">Register New Class</h3>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label>Class Name</Form.Label>
-            <Form.Control 
-              type="text" 
-              name="className" 
-              value={classData.className} 
-              onChange={handleChange} 
+            <Form.Control
+              type="text"
+              name="className"
+              value={classData.className}
+              onChange={handleChange}
               placeholder="Enter class name"
-              required 
+              required
             />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Class Teacher</Form.Label>
-            <Form.Control 
-              type="text" 
-              name="classTeacher" 
-              value={classData.classTeacher} 
-              onChange={handleChange} 
+            <Form.Control
+              type="text"
+              name="classTeacher"
+              value={classData.classTeacher}
+              onChange={handleChange}
               placeholder="Enter class teacher"
-              required 
+              required
             />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Grade Level</Form.Label>
-            <Form.Select 
-              name="gradeLevel" 
-              value={classData.gradeLevel} 
-              onChange={handleChange} 
+            <Form.Select
+              name="gradeLevel"
+              value={classData.gradeLevel}
+              onChange={handleChange}
               required
             >
               <option value="">Select grade</option>
@@ -82,24 +89,25 @@ const ClassRegister = () => {
               <option value="Grade 3">Grade 3</option>
               <option value="Grade 4">Grade 4</option>
               <option value="Grade 5">Grade 5</option>
-              {/* Add more grades if needed */}
             </Form.Select>
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Room Number</Form.Label>
-            <Form.Control 
-              type="text" 
-              name="roomNumber" 
-              value={classData.roomNumber} 
-              onChange={handleChange} 
+            <Form.Control
+              type="text"
+              name="roomNumber"
+              value={classData.roomNumber}
+              onChange={handleChange}
               placeholder="Enter room number"
-              required 
+              required
             />
           </Form.Group>
 
           <div className="text-center">
-            <Button variant="primary" type="submit">Register Class</Button>
+            <Button variant="primary" type="submit">
+              Register Class
+            </Button>
           </div>
         </Form>
       </div>
