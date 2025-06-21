@@ -9,6 +9,7 @@ import TeacherRegister from "./pages/addteachers";
 import StudentRegister from "./pages/studentregister";
 import TeacherDashboard from "./pages/teacherdashboard";
 import ManageStudents from "./pages/managestudents";
+import ClassView from "./pages/classview";
 
 
 
@@ -26,7 +27,7 @@ function App() {
         <Route path="/studentregister" element={<StudentRegister/>}/>
         <Route path="/teacherdashboard" element={<TeacherDashboard/>}/>
         <Route path="/managestudents" element={<ManageStudents/>}/>
-        
+        <Route path="/classview" element={<ClassView/>}/>
         
         
       </Routes>
