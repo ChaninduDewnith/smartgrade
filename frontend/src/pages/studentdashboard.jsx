@@ -1,14 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Dropdown } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const StudentDashboard = () => {
+  const navigate = useNavigate();
   const buttons = [
     {
       label: "View Courses",
       color: "primary",
       icon: "bi-journal-text",
-      description: "Access enrolled course materials"
+      description: "Access enrolled course materials",
+      onClick: () => navigate("/classview"),
     },
     {
       label: "Submit Assignments",
