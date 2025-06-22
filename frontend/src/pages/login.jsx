@@ -24,6 +24,7 @@ const LoginPage = () => {
 
       if (response.ok) {
         alert(data.message);
+ 
         navigate("/admindashboard");
       } else {
         alert(data.message);

@@ -1,14 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Dropdown } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const StudentDashboard = () => {
+  const navigate = useNavigate();
   const buttons = [
     {
       label: "View Courses",
       color: "primary",
       icon: "bi-journal-text",
-      description: "Access enrolled course materials"
+      description: "Access enrolled course materials",
+      onClick: () => navigate("/classview"),
     },
     {
       label: "Submit Assignments",
@@ -80,7 +83,8 @@ const StudentDashboard = () => {
                   </div>
                   <div className="card-body">
                     <p className="text-muted mb-3 small">{btn.description}</p>
-                    <button className={`btn btn-${btn.color} w-100 py-2 fw-semibold rounded-pill`}>
+                    <button className={`btn btn-${btn.color} w-100 py-2 fw-semibold rounded-pill`}
+                      onClick={btn.onClick}>
                       <i className={`${btn.icon} me-2`}></i>
                       Go
                     </button>
