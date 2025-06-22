@@ -24,7 +24,7 @@ const LoginPage = () => {
 
       if (response.ok) {
         alert(data.message);
-        navigate("/teacherdashboard");
+        navigate("/studentdashboard");
       } else {
         alert(data.message);
       }

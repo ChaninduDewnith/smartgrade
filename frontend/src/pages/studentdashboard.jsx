@@ -83,7 +83,8 @@ const StudentDashboard = () => {
                   </div>
                   <div className="card-body">
                     <p className="text-muted mb-3 small">{btn.description}</p>
-                    <button className={`btn btn-${btn.color} w-100 py-2 fw-semibold rounded-pill`}>
+                    <button className={`btn btn-${btn.color} w-100 py-2 fw-semibold rounded-pill`}
+                      onClick={btn.onClick}>
                       <i className={`${btn.icon} me-2`}></i>
                       Go
                     </button>
