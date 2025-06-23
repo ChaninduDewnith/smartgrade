@@ -17,7 +17,8 @@ const StudentDashboard = () => {
       label: "Submit Assignments",
       color: "info",
       icon: "bi-upload",
-      description: "Upload your assignments here"
+      description: "Upload your assignments here",
+      onClick: () => navigate("/assignment"),
     },
     {
       label: "Grades for exams",
