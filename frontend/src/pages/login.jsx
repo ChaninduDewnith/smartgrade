@@ -17,14 +17,15 @@ const LoginPage = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, password }),  // ✅ send email & password in body
+        body: JSON.stringify({ email, password }),  
       });
 
       const data = await response.json();
 
       if (response.ok) {
         alert(data.message);
-        navigate("/studentdashboard");
+ 
+        navigate("/admindashboard");
       } else {
         alert(data.message);
       }

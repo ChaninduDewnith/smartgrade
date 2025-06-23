@@ -22,10 +22,10 @@ const TeacherDashboard = () => {
       onClick: () => navigate("/studentregister"),
     },
     {
-      label: "Add Homeorks",
+      label: "View classes",
       color: "success",
       icon: "bi-bar-chart-line-fill",
-      description: "Monitor academic and system performance",
+      description: "",
       onClick: () => navigate("/view-reports"),
     },
   ];
