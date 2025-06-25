@@ -13,6 +13,7 @@ import ManageStudents from "./pages/managestudents";
 import ClassView from "./pages/classview";
 import AssignmentUpload from "./pages/assignment";
 import TeacherClassList from "./pages/teacherclasses";
+import ViewAssignment from "./pages/viewassignment";
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/classview" element={<ClassView/>}/>
         <Route path="/assignment" element={<AssignmentUpload/>}/>
         <Route path="/teacherclasses" element={<TeacherClassList/>}/>
+        <Route path="/viewassignment" element={<ViewAssignment/>}/>
       </Routes>
     </Router>
   );
