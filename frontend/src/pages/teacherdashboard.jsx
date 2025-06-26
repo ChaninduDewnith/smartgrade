@@ -28,6 +28,13 @@ const TeacherDashboard = () => {
       description: "",
       onClick: () => navigate("/teacherclasses"),
     },
+    {
+      label: "View Assignment",
+      color: "success",
+      icon: "bi-bar-chart-line-fill",
+      description: "",
+      onClick: () => navigate("/viewassignment"),
+    },
   ];
 
   return (
