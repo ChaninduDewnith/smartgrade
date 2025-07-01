@@ -11,6 +11,13 @@ body, html {
   overflow-x: hidden;
 }
 
+/* Layout container */
+.center-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /* Navbar */
 .navbar {
   background: linear-gradient(to right, #2563eb, #1e40af);
@@ -80,13 +87,18 @@ body, html {
 }
 
 /* Section Titles */
-.about, .programs, .contact {
+.about,
+.programs,
+.contact {
   padding: 4rem 2rem;
   text-align: center;
   background-color: white;
 }
 
-.about h3, .programs h3, .contact h3 {
+/* Titles inside sections */
+.about h3,
+.programs h3,
+.contact h3 {
   font-size: 2rem;
   color: #1e3a8a;
   margin-bottom: 1rem;
@@ -98,20 +110,19 @@ body, html {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  padding: 0 1rem;
 }
 
 .program-card {
   background: #f9fafb;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .program-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .program-card h4 {
