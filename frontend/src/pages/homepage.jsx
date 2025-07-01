@@ -1,18 +1,20 @@
 import React from "react";
-import "./index.css"; // or "./App.css"
+import "./homepage.css";
 
 const HomePage = () => {
   return (
     <div className="homepage">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">School Portal</div>
-        <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/login" className="login-btn">Login</a></li>
-        </ul>
+        <div className="center-container nav-content">
+          <div className="logo">School Portal</div>
+          <ul className="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/login" className="login-btn">Login</a></li>
+          </ul>
+        </div>
       </nav>
 
       {/* Hero */}

@@ -1,4 +1,4 @@
-/* Reset & base */
+/* Base Reset */
 body, html {
   margin: 0;
   padding: 0;
@@ -7,22 +7,31 @@ body, html {
   color: #333;
 }
 
-.homepage {
+/*.homepage {
+  width: 100%;
   overflow-x: hidden;
-}
+}*/
 
-/* Layout container */
+/* Center container */
 .center-container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 /* Navbar */
 .navbar {
   background: linear-gradient(to right, #2563eb, #1e40af);
   color: white;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 0;
+}
+
+.nav-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +46,8 @@ body, html {
   list-style: none;
   display: flex;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -51,9 +62,9 @@ body, html {
 
 /* Hero */
 .hero {
+  width: 100%;
   background: radial-gradient(circle at top left, #e0f2fe, #ffffff);
-  padding: 5rem 2rem;
-  text-align: center;
+  padding: 5rem 0;
 }
 
 .hero h2 {
@@ -86,19 +97,14 @@ body, html {
   background-color: #1e40af;
 }
 
-/* Section Titles */
-.about,
-.programs,
-.contact {
-  padding: 4rem 2rem;
-  text-align: center;
+/* Sections */
+.about, .programs, .contact {
+  width: 100%;
+  padding: 4rem 0;
   background-color: white;
 }
 
-/* Titles inside sections */
-.about h3,
-.programs h3,
-.contact h3 {
+.about h3, .programs h3, .contact h3 {
   font-size: 2rem;
   color: #1e3a8a;
   margin-bottom: 1rem;
@@ -112,17 +118,18 @@ body, html {
   margin-top: 2rem;
 }
 
+/* Program Cards */
 .program-card {
   background: #f9fafb;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .program-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .program-card h4 {
@@ -135,7 +142,7 @@ body, html {
   background-color: #1e3a8a;
   color: white;
   text-align: center;
-  padding: 1.2rem;
+  padding: 1.2rem 0;
   font-size: 0.9rem;
 }
 
@@ -148,7 +155,6 @@ body, html {
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s, color 0.3s;
-  margin-left: 1rem;
 }
 
 .login-btn:hover {
