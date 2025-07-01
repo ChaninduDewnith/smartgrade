@@ -40,7 +40,7 @@ const TeacherDashboard = () => {
       color: "success",
       icon: "bi-bar-chart-line-fill",
       description: "",
-      onClick: () => navigate("/"),
+      onClick: () => navigate("/addresults"),
     },
   ];
 
