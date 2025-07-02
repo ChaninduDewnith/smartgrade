@@ -1,18 +1,18 @@
 import React from "react";
-import "./homepage.css";
+import "./HomePage.css";
 
 const HomePage = () => {
   return (
     <div className="homepage">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="center-container nav-content">
+        <div className="nav-content">
           <div className="logo">School Portal</div>
           <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="/login" className="login-btn">Login</a></li>
+            <li><a href="#about" className="nav-link">About</a></li>
+            <li><a href="#programs" className="nav-link">Programs</a></li>
+            <li><a href="#contact" className="nav-link">Contact</a></li>
+            <li><a href="/login" className="nav-link login-btn">Login</a></li>
           </ul>
         </div>
       </nav>
@@ -20,35 +20,39 @@ const HomePage = () => {
       {/* Hero */}
       <section className="hero">
         <div className="center-container">
-          <h2>Welcome to <span>Our School</span></h2>
-          <p>Empowering students through knowledge, creativity, and growth.</p>
+          <h2 className="hero-heading">
+            Welcome to <span className="hero-span">Our School</span>
+          </h2>
+          <p className="hero-text">
+            Empowering students through knowledge, creativity, and growth.
+          </p>
           <a href="#enroll" className="enroll-btn">Enroll Now</a>
         </div>
       </section>
 
       {/* About */}
-      <section className="about" id="about">
+      <section id="about" className="section">
         <div className="center-container">
-          <h3>About Us</h3>
+          <h3 className="section-title">About Us</h3>
           <p>We are committed to academic excellence and innovation in learning.</p>
         </div>
       </section>
 
       {/* Programs */}
-      <section className="programs" id="programs">
+      <section id="programs" className="section">
         <div className="center-container">
-          <h3>Our Programs</h3>
+          <h3 className="section-title">Our Programs</h3>
           <div className="program-grid">
             <div className="program-card">
-              <h4>Primary Education</h4>
+              <h4 style={{ color: "#2563eb", marginBottom: "0.5rem" }}>Primary Education</h4>
               <p>Engaging curriculum for early learners from Grade 1–5.</p>
             </div>
             <div className="program-card">
-              <h4>Secondary Education</h4>
+              <h4 style={{ color: "#2563eb", marginBottom: "0.5rem" }}>Secondary Education</h4>
               <p>Comprehensive academic and extracurricular development.</p>
             </div>
             <div className="program-card">
-              <h4>ICT & Innovation</h4>
+              <h4 style={{ color: "#2563eb", marginBottom: "0.5rem" }}>ICT & Innovation</h4>
               <p>Digital learning and problem-solving for 21st-century skills.</p>
             </div>
           </div>
@@ -56,9 +60,9 @@ const HomePage = () => {
       </section>
 
       {/* Contact */}
-      <section className="contact" id="contact">
+      <section id="contact" className="section">
         <div className="center-container">
-          <h3>Contact Us</h3>
+          <h3 className="section-title">Contact Us</h3>
           <p>Email: contact@ourschool.com | Phone: +94 712345678</p>
         </div>
       </section>
